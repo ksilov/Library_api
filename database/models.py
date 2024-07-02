@@ -3,8 +3,6 @@ from sqlalchemy import ForeignKey, String, Integer, DateTime, Boolean, Float
 from sqlalchemy.orm import Mapped, DeclarativeBase, relationship, mapped_column
 from sqlalchemy.sql import func
 
-from config import settings
-
 
 Base = DeclarativeBase()
 
