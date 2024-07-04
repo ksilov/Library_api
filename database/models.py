@@ -11,6 +11,7 @@ class Users(Base):
     __tablename__ = 'users'
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    password: Mapped[str] = mapped_column(String(30))
     name: Mapped[str] = mapped_column(String(100))
     bio: Mapped[str] = mapped_column(String(256), default=None)
     premium: Mapped[bool] = mapped_column(Boolean, default=False)
